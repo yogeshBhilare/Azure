@@ -1,0 +1,22 @@
+# Local .terraform directories
+**/.terraform
+*/*/.terraform
+*/.terraform
+Three_tier_azure\.terraform\providers\registry.terraform.io\hashicorp\azurerm\3.55.0\windows_386\terraform-provider-azurerm_v3.55.0_x5.exe
+
+# Local terraform lock files
+**/.terraform.lock.hcl
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# Ignore override files as they are usually used to override resources locally and so
+# are not checked in
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json

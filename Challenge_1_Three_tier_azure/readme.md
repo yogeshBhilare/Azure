@@ -1,15 +1,20 @@
 
-**Problem statment**
+**Problem statment** 
+
 A 3-tier environment is a common setup. Use a tool of your choosing/familiarity create these
 resources on a cloud environment (Azure/AWS/GCP). Please remember we will not be judged
 on the outcome but more focusing on the approach, style and reproducibility.
 
 
 **Solution Overview**
-T
+
 This terraform code  deploys a 3 Tier Red Hat Solution on Azure.The Solution includes Web tier Servers, Application tier Servers Tier Servers running Linux server and user Azure MSSQL database. 
 
-![alt text](https://github.com/yogeshBhilare/Azure/blob/main/image.jpg?raw=true)
+
+![alt text](https://github.com/yogeshBhilare/Azure/blob/main/Challenge_1_Three_tier_azure/Azure%20Demo.png?raw=true)
+
+
+
 
 **Template Solution Architecture**
 
@@ -25,6 +30,7 @@ Compute        :  3 Avaibility sets to get fault tollarence - web_availabilty_se
                   
  
 **Terraform variables template (var.tf) :**
+
     variable "rsgname" {}
     variable "location" {}
     variable "vnet_name" {}
@@ -44,6 +50,7 @@ Compute        :  3 Avaibility sets to get fault tollarence - web_availabilty_se
     variable "primary_database_version" {}
 
 **Sample variable values (terraform.tfvars):**
+
     rsgname                   = "azure-stack"
     location                  = "Central India"
     vnet_name                 = "vnet01"
